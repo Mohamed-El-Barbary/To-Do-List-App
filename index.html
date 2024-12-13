@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========== Start Sweetalert ========== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <!-- ========== End Sweatalert ========== -->
+
+    <!-- ========== Start Font Awesome ========== -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- ========== End Font Awesome ========== -->
+
+    <!-- ========== Start BootStrap CSS ========== -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- ========== End BootStrap CSS ========== -->
+
+    <!-- ========== Start Main Css ========== -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <!-- ========== End Main Css ========== -->
+    <!-- ========== Start Toastr CSS  ========== -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+    <!-- ========== End Toastr CSS ========== -->
+  </head>
+  <body>
+    <section class=" mx-auto my-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="status-todo bg-light bg-opacity-25 p-3 rounded mb-4 shadow border d-flex align-items-center justify-content-between"
+            >
+              <div class="flex-grow-1">
+                <h1 class="h5">Todo App</h1>
+                <span class="small">keep it up! </span>
+                <div id="progressBar">
+                  <div id="progress"></div>
+                </div>
+              </div>
+              <div class="status-number"><span>0</span> / <span>0</span></div>
+            </div>
+            <form class="d-flex gap-5 bg-white p-4 rounded shadow">
+              <input
+                id="inputValue"
+                type="text"
+                class="form-control custom-input"
+                placeholder="Task to be done..."
+              />
+              <button type="submit" class="add-task" id="btnSubmit">Add</button>
+            </form>
+            <ul
+              class="task-container bg-white mt-5 p-4 rounded shadow"
+              id="taskContainer"
+            ></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <script src="http://www.jsdelivr.com/#!particles.js"></script>
+    <!--^ ========== Start Jquery ========== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ========== End Jquery ========== -->
+    <!--^ ========== Start Sweetalert  ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <!-- ========== End Sweetalert  ========== -->
+    <!--^ ========== Start Toastr JS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- ========== End Toastr JS ========== -->
+    <!--^ ========== Start Bootstrap js ========== -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- ========== End Bootstrap js ========== -->
+    <!--^ ========== Start Main Js ========== -->
+    <script src="./JS/index.js"></script>
+    <!-- ========== End Main Js ========== -->
+  </body>
+</html>
